@@ -1,0 +1,52 @@
+.page > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.withPadding {
+    padding: 10px;
+}
+
+.centered {
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.header {
+    border-bottom: 1px solid #e5e5e5;
+    height: 50px;
+    align-items: center;
+    .withPadding;
+    .centered;
+    .flex;
+
+    > div {
+        width: 1200px;
+    }
+}
+
+.content {
+    flex: 1;
+    justify-content: center;
+    .withPadding;
+    .flex;
+
+    > article {
+        width: 1200px;
+    }
+}
+
+.footer {
+    height: 50px;
+    border-top: 1px solid #e5e5e5;
+    align-items: center;
+
+    .withPadding;
+    .centered;
+    .flex;
+}
